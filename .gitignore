@@ -37,3 +37,4 @@ DerivedData
 Carthage/Build
 
 *.pyc
+*.mp4
