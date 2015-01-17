@@ -7,6 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		27ED56C51A6ADFCE0016AB24 /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27ED56C41A6ADFCE0016AB24 /* Bolts.framework */; };
+		27ED56C71A6ADFD30016AB24 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27ED56C61A6ADFD30016AB24 /* Parse.framework */; };
+		27ED56D21A6AE0240016AB24 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27ED56C81A6AE0240016AB24 /* AudioToolbox.framework */; };
+		27ED56D31A6AE0240016AB24 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27ED56C91A6AE0240016AB24 /* CFNetwork.framework */; };
+		27ED56D41A6AE0240016AB24 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27ED56CA1A6AE0240016AB24 /* CoreGraphics.framework */; };
+		27ED56D51A6AE0240016AB24 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27ED56CB1A6AE0240016AB24 /* CoreLocation.framework */; };
+		27ED56D61A6AE0240016AB24 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 27ED56CC1A6AE0240016AB24 /* libz.dylib */; };
+		27ED56D71A6AE0240016AB24 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27ED56CD1A6AE0240016AB24 /* MobileCoreServices.framework */; };
+		27ED56D81A6AE0240016AB24 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27ED56CE1A6AE0240016AB24 /* QuartzCore.framework */; };
+		27ED56D91A6AE0240016AB24 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27ED56CF1A6AE0240016AB24 /* Security.framework */; };
+		27ED56DA1A6AE0240016AB24 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27ED56D01A6AE0240016AB24 /* StoreKit.framework */; };
+		27ED56DB1A6AE0240016AB24 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27ED56D11A6AE0240016AB24 /* SystemConfiguration.framework */; };
+		27ED56DD1A6AE23A0016AB24 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 27ED56DC1A6AE23A0016AB24 /* libsqlite3.dylib */; };
 		878CA78A1A6ADD9100ADEF0F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 878CA7891A6ADD9100ADEF0F /* AppDelegate.swift */; };
 		878CA78D1A6ADD9100ADEF0F /* T_Swizzle.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 878CA78B1A6ADD9100ADEF0F /* T_Swizzle.xcdatamodeld */; };
 		878CA78F1A6ADD9100ADEF0F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 878CA78E1A6ADD9100ADEF0F /* ViewController.swift */; };
@@ -27,6 +40,20 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		27ED56C01A6ADFAF0016AB24 /* T-Swizzle-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "T-Swizzle-Bridging-Header.h"; sourceTree = "<group>"; };
+		27ED56C41A6ADFCE0016AB24 /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Bolts.framework; path = "../../../Downloads/parse-library-1.6.1/Bolts.framework"; sourceTree = "<group>"; };
+		27ED56C61A6ADFD30016AB24 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Parse.framework; path = "../../../Downloads/parse-library-1.6.1/Parse.framework"; sourceTree = "<group>"; };
+		27ED56C81A6AE0240016AB24 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		27ED56C91A6AE0240016AB24 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		27ED56CA1A6AE0240016AB24 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		27ED56CB1A6AE0240016AB24 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		27ED56CC1A6AE0240016AB24 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		27ED56CD1A6AE0240016AB24 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		27ED56CE1A6AE0240016AB24 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		27ED56CF1A6AE0240016AB24 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		27ED56D01A6AE0240016AB24 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		27ED56D11A6AE0240016AB24 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		27ED56DC1A6AE23A0016AB24 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
 		878CA7841A6ADD9100ADEF0F /* T-Swizzle.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "T-Swizzle.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		878CA7881A6ADD9100ADEF0F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		878CA7891A6ADD9100ADEF0F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -45,6 +72,19 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				27ED56DD1A6AE23A0016AB24 /* libsqlite3.dylib in Frameworks */,
+				27ED56D21A6AE0240016AB24 /* AudioToolbox.framework in Frameworks */,
+				27ED56D31A6AE0240016AB24 /* CFNetwork.framework in Frameworks */,
+				27ED56D41A6AE0240016AB24 /* CoreGraphics.framework in Frameworks */,
+				27ED56D51A6AE0240016AB24 /* CoreLocation.framework in Frameworks */,
+				27ED56D61A6AE0240016AB24 /* libz.dylib in Frameworks */,
+				27ED56D71A6AE0240016AB24 /* MobileCoreServices.framework in Frameworks */,
+				27ED56D81A6AE0240016AB24 /* QuartzCore.framework in Frameworks */,
+				27ED56D91A6AE0240016AB24 /* Security.framework in Frameworks */,
+				27ED56DA1A6AE0240016AB24 /* StoreKit.framework in Frameworks */,
+				27ED56DB1A6AE0240016AB24 /* SystemConfiguration.framework in Frameworks */,
+				27ED56C71A6ADFD30016AB24 /* Parse.framework in Frameworks */,
+				27ED56C51A6ADFCE0016AB24 /* Bolts.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -58,9 +98,30 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		27ED56C31A6ADFC60016AB24 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				27ED56DC1A6AE23A0016AB24 /* libsqlite3.dylib */,
+				27ED56C81A6AE0240016AB24 /* AudioToolbox.framework */,
+				27ED56C91A6AE0240016AB24 /* CFNetwork.framework */,
+				27ED56CA1A6AE0240016AB24 /* CoreGraphics.framework */,
+				27ED56CB1A6AE0240016AB24 /* CoreLocation.framework */,
+				27ED56CC1A6AE0240016AB24 /* libz.dylib */,
+				27ED56CD1A6AE0240016AB24 /* MobileCoreServices.framework */,
+				27ED56CE1A6AE0240016AB24 /* QuartzCore.framework */,
+				27ED56CF1A6AE0240016AB24 /* Security.framework */,
+				27ED56D01A6AE0240016AB24 /* StoreKit.framework */,
+				27ED56D11A6AE0240016AB24 /* SystemConfiguration.framework */,
+				27ED56C61A6ADFD30016AB24 /* Parse.framework */,
+				27ED56C41A6ADFCE0016AB24 /* Bolts.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		878CA77B1A6ADD9100ADEF0F = {
 			isa = PBXGroup;
 			children = (
+				27ED56C31A6ADFC60016AB24 /* Frameworks */,
 				878CA7861A6ADD9100ADEF0F /* T-Swizzle */,
 				878CA79F1A6ADD9100ADEF0F /* T-SwizzleTests */,
 				878CA7851A6ADD9100ADEF0F /* Products */,
@@ -86,6 +147,7 @@
 				878CA7951A6ADD9100ADEF0F /* LaunchScreen.xib */,
 				878CA78B1A6ADD9100ADEF0F /* T_Swizzle.xcdatamodeld */,
 				878CA7871A6ADD9100ADEF0F /* Supporting Files */,
+				27ED56C01A6ADFAF0016AB24 /* T-Swizzle-Bridging-Header.h */,
 			);
 			path = "T-Swizzle";
 			sourceTree = "<group>";
@@ -340,9 +402,16 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"/Users/jenniferzhang/Downloads/parse-library-1.6.1",
+				);
 				INFOPLIST_FILE = "T-Swizzle/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "T-Swizzle/T-Swizzle-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -350,9 +419,15 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"/Users/jenniferzhang/Downloads/parse-library-1.6.1",
+				);
 				INFOPLIST_FILE = "T-Swizzle/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "T-Swizzle/T-Swizzle-Bridging-Header.h";
 			};
 			name = Release;
 		};
@@ -409,6 +484,7 @@
 				878CA7A81A6ADD9100ADEF0F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		878CA7A91A6ADD9100ADEF0F /* Build configuration list for PBXNativeTarget "T-SwizzleTests" */ = {
 			isa = XCConfigurationList;
@@ -417,6 +493,7 @@
 				878CA7AB1A6ADD9100ADEF0F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

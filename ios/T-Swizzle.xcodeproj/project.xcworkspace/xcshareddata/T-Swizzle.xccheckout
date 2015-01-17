@@ -14,7 +14,7 @@
 		<string>https://github.com/Vervious/tswizzle.me.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>T-Swizzle/T-Swizzle.xcodeproj</string>
+	<string>ios/T-Swizzle.xcodeproj</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>1A486AE7B6FAFA057BC309EF21775E1B108AC686</key>

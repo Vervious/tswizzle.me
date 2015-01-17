@@ -16,7 +16,22 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
-        // Override point for customization after application launch.
+        Parse.setApplicationId("1vEDalrrsqKY0TP61ax6ZSx1QrwsPhaS0QuXynoH", clientKey: "k2zZ3ZluMH2UVdihOnb6hOID7FkiUoFh9JzQxM2p");
+        
+        PFAnalytics.trackAppOpenedWithLaunchOptionsInBackground([NSObject : AnyObject]()) { (Bool, NSError) -> Void in
+        
+        }
+        
+        
+        var object = PFObject(className: "TestClass")
+        object.addObject("Banana", forKey: "favoriteFood")
+        object.addObject("Chocolate", forKey: "favoriteIceCream")
+        object.saveInBackgroundWithBlock { (Bool, NSError) -> Void in
+            
+        }
+        
+        
+        
         return true
     }
 
