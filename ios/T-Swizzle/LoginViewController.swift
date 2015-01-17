@@ -10,13 +10,34 @@ import UIKit
 
 class ViewController: UIViewController, FBLoginViewDelegate {
     
-    @IBOutlet var fbLoginView : FBLoginView!
+    
+    @IBOutlet weak var fbLoginButton: UIButton!
+    
+    @IBAction func loginButtonTouchHandler(sender: AnyObject) {
+        
+        var permissions = ["public_profile", "email", "user_friends"]
+        
+        PFFacebookUtils.logInWithPermissions(permissions, {
+            (user: PFUser!, error: NSError!) -> Void in
+            if user == nil {
+                NSLog("Uh oh. The user cancelled the Facebook login.")
+                
+            } else if user.isNew {
+                NSLog("User signed up and logged in through Facebook!")
+                self.performSegueWithIdentifier("toTheSwizzle", sender: self)
+                
+                
+            } else {
+                NSLog("User logged in through Facebook!")
+                self.performSegueWithIdentifier("toTheSwizzle", sender: self)
+
+            }
+        })
+        
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        self.fbLoginView.delegate = self;
-        self.fbLoginView.readPermissions = ["public_profile", "email", "user_friends"]
 
     }
     
@@ -33,6 +54,23 @@ class ViewController: UIViewController, FBLoginViewDelegate {
     
     func loginViewFetchedUserInfo(loginView : FBLoginView!, user: FBGraphUser){
         NSLog("User Name: \(user.name)")
+        
+        var parseUser = PFUser()
+        parseUser.username = user.name
+        parseUser["phone"] = "123456789"
+        
+        parseUser.signUpInBackgroundWithBlock {
+            (succeeded: Bool!, error: NSError!) -> Void in
+            if error == nil {
+                // Hooray! Let them use the app now.
+            } else {
+                NSLog("Error")
+//                let errorString = error.userInfo["error"] as NSString
+                // Show the errorString somewhere and let the user try again.
+            }
+        }
+        
+        
     }
     
     //If the user is logged out
