@@ -8,10 +8,19 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, FBLoginViewDelegate {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        let prefs:NSUserDefaults = NSUserDefaults.standardUserDefaults()
+        let isLoggedIn:Int = prefs.integerForKey("ISLOGGEDIN") as Int
+        if (isLoggedIn != 1) {
+            self.performSegueWithIdentifier("goto_login", sender: self)
+        } else {
+            self.usernameLabel.text = prefs.valueForKey("USERNAME") as NSString
+        }
+
         
         self.logInWithFacebook()
         
@@ -19,16 +28,20 @@ class ViewController: UIViewController {
     
     func logInWithFacebook() {
         
-//        PFFacebookUtils.logInWithPermissions(permissions, {
-//            (user: PFUser!, error: NSError!) -> Void in
-//            if user == nil {
-//                NSLog("Uh oh. The user cancelled the Facebook login.")
-//            } else if user.isNew {
-//                NSLog("User signed up and logged in through Facebook!")
-//            } else {
-//                NSLog("User logged in through Facebook!")
-//            }
-//        })
+        var permissions = ["public_profile", "user_friends"]
+        
+        PFFacebookUtils.logInWithPermissions(permissions, {
+            (user: PFUser!, error: NSError!) -> Void in
+            if user == nil {
+                NSLog("Uh oh. The user cancelled the Facebook login.")
+            } else if user.isNew {
+                NSLog("User signed up and logged in through Facebook!")
+                
+                
+            } else {
+                NSLog("User logged in through Facebook!")
+            }
+        })
 
 }
 
