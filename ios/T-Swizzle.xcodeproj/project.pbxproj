@@ -20,6 +20,8 @@
 		27ED56DA1A6AE0240016AB24 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27ED56D01A6AE0240016AB24 /* StoreKit.framework */; };
 		27ED56DB1A6AE0240016AB24 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27ED56D11A6AE0240016AB24 /* SystemConfiguration.framework */; };
 		27ED56DD1A6AE23A0016AB24 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 27ED56DC1A6AE23A0016AB24 /* libsqlite3.dylib */; };
+		27ED56E11A6AF37B0016AB24 /* FacebookSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27ED56E01A6AF37B0016AB24 /* FacebookSDK.framework */; };
+		27ED56E31A6AF6270016AB24 /* ParseFacebookUtils.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27ED56E21A6AF6270016AB24 /* ParseFacebookUtils.framework */; };
 		878CA78A1A6ADD9100ADEF0F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 878CA7891A6ADD9100ADEF0F /* AppDelegate.swift */; };
 		878CA78D1A6ADD9100ADEF0F /* T_Swizzle.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 878CA78B1A6ADD9100ADEF0F /* T_Swizzle.xcdatamodeld */; };
 		878CA78F1A6ADD9100ADEF0F /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 878CA78E1A6ADD9100ADEF0F /* LoginViewController.swift */; };
@@ -54,6 +56,8 @@
 		27ED56D01A6AE0240016AB24 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
 		27ED56D11A6AE0240016AB24 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		27ED56DC1A6AE23A0016AB24 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
+		27ED56E01A6AF37B0016AB24 /* FacebookSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FacebookSDK.framework; path = ../../../Documents/FacebookSDK/FacebookSDK.framework; sourceTree = "<group>"; };
+		27ED56E21A6AF6270016AB24 /* ParseFacebookUtils.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ParseFacebookUtils.framework; path = "../../../Downloads/parse-library-1.6.1/ParseFacebookUtils.framework"; sourceTree = "<group>"; };
 		878CA7841A6ADD9100ADEF0F /* T-Swizzle.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "T-Swizzle.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		878CA7881A6ADD9100ADEF0F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		878CA7891A6ADD9100ADEF0F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -80,11 +84,13 @@
 				27ED56D61A6AE0240016AB24 /* libz.dylib in Frameworks */,
 				27ED56D71A6AE0240016AB24 /* MobileCoreServices.framework in Frameworks */,
 				27ED56D81A6AE0240016AB24 /* QuartzCore.framework in Frameworks */,
+				27ED56E31A6AF6270016AB24 /* ParseFacebookUtils.framework in Frameworks */,
 				27ED56D91A6AE0240016AB24 /* Security.framework in Frameworks */,
 				27ED56DA1A6AE0240016AB24 /* StoreKit.framework in Frameworks */,
 				27ED56DB1A6AE0240016AB24 /* SystemConfiguration.framework in Frameworks */,
 				27ED56C71A6ADFD30016AB24 /* Parse.framework in Frameworks */,
 				27ED56C51A6ADFCE0016AB24 /* Bolts.framework in Frameworks */,
+				27ED56E11A6AF37B0016AB24 /* FacebookSDK.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -101,6 +107,8 @@
 		27ED56C31A6ADFC60016AB24 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				27ED56E21A6AF6270016AB24 /* ParseFacebookUtils.framework */,
+				27ED56E01A6AF37B0016AB24 /* FacebookSDK.framework */,
 				27ED56DC1A6AE23A0016AB24 /* libsqlite3.dylib */,
 				27ED56C81A6AE0240016AB24 /* AudioToolbox.framework */,
 				27ED56C91A6AE0240016AB24 /* CFNetwork.framework */,
@@ -406,6 +414,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"/Users/jenniferzhang/Downloads/parse-library-1.6.1",
+					/Users/jenniferzhang/Documents/FacebookSDK,
 				);
 				INFOPLIST_FILE = "T-Swizzle/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -423,6 +432,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"/Users/jenniferzhang/Downloads/parse-library-1.6.1",
+					/Users/jenniferzhang/Documents/FacebookSDK,
 				);
 				INFOPLIST_FILE = "T-Swizzle/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
