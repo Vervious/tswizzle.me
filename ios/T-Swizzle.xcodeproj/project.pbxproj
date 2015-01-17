@@ -7,50 +7,48 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		878CA7581A6AD8E500ADEF0F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 878CA7571A6AD8E500ADEF0F /* AppDelegate.swift */; };
-		878CA75A1A6AD8E500ADEF0F /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 878CA7591A6AD8E500ADEF0F /* RootViewController.swift */; };
-		878CA75C1A6AD8E500ADEF0F /* DataViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 878CA75B1A6AD8E500ADEF0F /* DataViewController.swift */; };
-		878CA75E1A6AD8E500ADEF0F /* ModelController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 878CA75D1A6AD8E500ADEF0F /* ModelController.swift */; };
-		878CA7611A6AD8E500ADEF0F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 878CA75F1A6AD8E500ADEF0F /* Main.storyboard */; };
-		878CA7631A6AD8E500ADEF0F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 878CA7621A6AD8E500ADEF0F /* Images.xcassets */; };
-		878CA7661A6AD8E500ADEF0F /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 878CA7641A6AD8E500ADEF0F /* LaunchScreen.xib */; };
-		878CA7721A6AD8E500ADEF0F /* T_SwizzleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 878CA7711A6AD8E500ADEF0F /* T_SwizzleTests.swift */; };
+		878CA78A1A6ADD9100ADEF0F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 878CA7891A6ADD9100ADEF0F /* AppDelegate.swift */; };
+		878CA78D1A6ADD9100ADEF0F /* T_Swizzle.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 878CA78B1A6ADD9100ADEF0F /* T_Swizzle.xcdatamodeld */; };
+		878CA78F1A6ADD9100ADEF0F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 878CA78E1A6ADD9100ADEF0F /* ViewController.swift */; };
+		878CA7921A6ADD9100ADEF0F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 878CA7901A6ADD9100ADEF0F /* Main.storyboard */; };
+		878CA7941A6ADD9100ADEF0F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 878CA7931A6ADD9100ADEF0F /* Images.xcassets */; };
+		878CA7971A6ADD9100ADEF0F /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 878CA7951A6ADD9100ADEF0F /* LaunchScreen.xib */; };
+		878CA7A31A6ADD9100ADEF0F /* T_SwizzleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 878CA7A21A6ADD9100ADEF0F /* T_SwizzleTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		878CA76C1A6AD8E500ADEF0F /* PBXContainerItemProxy */ = {
+		878CA79D1A6ADD9100ADEF0F /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 878CA74A1A6AD8E500ADEF0F /* Project object */;
+			containerPortal = 878CA77C1A6ADD9100ADEF0F /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 878CA7511A6AD8E500ADEF0F;
+			remoteGlobalIDString = 878CA7831A6ADD9100ADEF0F;
 			remoteInfo = "T-Swizzle";
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		878CA7521A6AD8E500ADEF0F /* T-Swizzle.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "T-Swizzle.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		878CA7561A6AD8E500ADEF0F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		878CA7571A6AD8E500ADEF0F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		878CA7591A6AD8E500ADEF0F /* RootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
-		878CA75B1A6AD8E500ADEF0F /* DataViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataViewController.swift; sourceTree = "<group>"; };
-		878CA75D1A6AD8E500ADEF0F /* ModelController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelController.swift; sourceTree = "<group>"; };
-		878CA7601A6AD8E500ADEF0F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		878CA7621A6AD8E500ADEF0F /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		878CA7651A6AD8E500ADEF0F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
-		878CA76B1A6AD8E500ADEF0F /* T-SwizzleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "T-SwizzleTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		878CA7701A6AD8E500ADEF0F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		878CA7711A6AD8E500ADEF0F /* T_SwizzleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = T_SwizzleTests.swift; sourceTree = "<group>"; };
+		878CA7841A6ADD9100ADEF0F /* T-Swizzle.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "T-Swizzle.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		878CA7881A6ADD9100ADEF0F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		878CA7891A6ADD9100ADEF0F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		878CA78C1A6ADD9100ADEF0F /* T_Swizzle.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = T_Swizzle.xcdatamodel; sourceTree = "<group>"; };
+		878CA78E1A6ADD9100ADEF0F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		878CA7911A6ADD9100ADEF0F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		878CA7931A6ADD9100ADEF0F /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		878CA7961A6ADD9100ADEF0F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		878CA79C1A6ADD9100ADEF0F /* T-SwizzleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "T-SwizzleTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		878CA7A11A6ADD9100ADEF0F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		878CA7A21A6ADD9100ADEF0F /* T_SwizzleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = T_SwizzleTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		878CA74F1A6AD8E500ADEF0F /* Frameworks */ = {
+		878CA7811A6ADD9100ADEF0F /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		878CA7681A6AD8E500ADEF0F /* Frameworks */ = {
+		878CA7991A6ADD9100ADEF0F /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -60,60 +58,59 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		878CA7491A6AD8E500ADEF0F = {
+		878CA77B1A6ADD9100ADEF0F = {
 			isa = PBXGroup;
 			children = (
-				878CA7541A6AD8E500ADEF0F /* T-Swizzle */,
-				878CA76E1A6AD8E500ADEF0F /* T-SwizzleTests */,
-				878CA7531A6AD8E500ADEF0F /* Products */,
+				878CA7861A6ADD9100ADEF0F /* T-Swizzle */,
+				878CA79F1A6ADD9100ADEF0F /* T-SwizzleTests */,
+				878CA7851A6ADD9100ADEF0F /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		878CA7531A6AD8E500ADEF0F /* Products */ = {
+		878CA7851A6ADD9100ADEF0F /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				878CA7521A6AD8E500ADEF0F /* T-Swizzle.app */,
-				878CA76B1A6AD8E500ADEF0F /* T-SwizzleTests.xctest */,
+				878CA7841A6ADD9100ADEF0F /* T-Swizzle.app */,
+				878CA79C1A6ADD9100ADEF0F /* T-SwizzleTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		878CA7541A6AD8E500ADEF0F /* T-Swizzle */ = {
+		878CA7861A6ADD9100ADEF0F /* T-Swizzle */ = {
 			isa = PBXGroup;
 			children = (
-				878CA7571A6AD8E500ADEF0F /* AppDelegate.swift */,
-				878CA7591A6AD8E500ADEF0F /* RootViewController.swift */,
-				878CA75B1A6AD8E500ADEF0F /* DataViewController.swift */,
-				878CA75D1A6AD8E500ADEF0F /* ModelController.swift */,
-				878CA75F1A6AD8E500ADEF0F /* Main.storyboard */,
-				878CA7621A6AD8E500ADEF0F /* Images.xcassets */,
-				878CA7641A6AD8E500ADEF0F /* LaunchScreen.xib */,
-				878CA7551A6AD8E500ADEF0F /* Supporting Files */,
+				878CA7891A6ADD9100ADEF0F /* AppDelegate.swift */,
+				878CA78E1A6ADD9100ADEF0F /* ViewController.swift */,
+				878CA7901A6ADD9100ADEF0F /* Main.storyboard */,
+				878CA7931A6ADD9100ADEF0F /* Images.xcassets */,
+				878CA7951A6ADD9100ADEF0F /* LaunchScreen.xib */,
+				878CA78B1A6ADD9100ADEF0F /* T_Swizzle.xcdatamodeld */,
+				878CA7871A6ADD9100ADEF0F /* Supporting Files */,
 			);
 			path = "T-Swizzle";
 			sourceTree = "<group>";
 		};
-		878CA7551A6AD8E500ADEF0F /* Supporting Files */ = {
+		878CA7871A6ADD9100ADEF0F /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				878CA7561A6AD8E500ADEF0F /* Info.plist */,
+				878CA7881A6ADD9100ADEF0F /* Info.plist */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		878CA76E1A6AD8E500ADEF0F /* T-SwizzleTests */ = {
+		878CA79F1A6ADD9100ADEF0F /* T-SwizzleTests */ = {
 			isa = PBXGroup;
 			children = (
-				878CA7711A6AD8E500ADEF0F /* T_SwizzleTests.swift */,
-				878CA76F1A6AD8E500ADEF0F /* Supporting Files */,
+				878CA7A21A6ADD9100ADEF0F /* T_SwizzleTests.swift */,
+				878CA7A01A6ADD9100ADEF0F /* Supporting Files */,
 			);
 			path = "T-SwizzleTests";
 			sourceTree = "<group>";
 		};
-		878CA76F1A6AD8E500ADEF0F /* Supporting Files */ = {
+		878CA7A01A6ADD9100ADEF0F /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				878CA7701A6AD8E500ADEF0F /* Info.plist */,
+				878CA7A11A6ADD9100ADEF0F /* Info.plist */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -121,13 +118,13 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		878CA7511A6AD8E500ADEF0F /* T-Swizzle */ = {
+		878CA7831A6ADD9100ADEF0F /* T-Swizzle */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 878CA7751A6AD8E500ADEF0F /* Build configuration list for PBXNativeTarget "T-Swizzle" */;
+			buildConfigurationList = 878CA7A61A6ADD9100ADEF0F /* Build configuration list for PBXNativeTarget "T-Swizzle" */;
 			buildPhases = (
-				878CA74E1A6AD8E500ADEF0F /* Sources */,
-				878CA74F1A6AD8E500ADEF0F /* Frameworks */,
-				878CA7501A6AD8E500ADEF0F /* Resources */,
+				878CA7801A6ADD9100ADEF0F /* Sources */,
+				878CA7811A6ADD9100ADEF0F /* Frameworks */,
+				878CA7821A6ADD9100ADEF0F /* Resources */,
 			);
 			buildRules = (
 			);
@@ -135,46 +132,46 @@
 			);
 			name = "T-Swizzle";
 			productName = "T-Swizzle";
-			productReference = 878CA7521A6AD8E500ADEF0F /* T-Swizzle.app */;
+			productReference = 878CA7841A6ADD9100ADEF0F /* T-Swizzle.app */;
 			productType = "com.apple.product-type.application";
 		};
-		878CA76A1A6AD8E500ADEF0F /* T-SwizzleTests */ = {
+		878CA79B1A6ADD9100ADEF0F /* T-SwizzleTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 878CA7781A6AD8E500ADEF0F /* Build configuration list for PBXNativeTarget "T-SwizzleTests" */;
+			buildConfigurationList = 878CA7A91A6ADD9100ADEF0F /* Build configuration list for PBXNativeTarget "T-SwizzleTests" */;
 			buildPhases = (
-				878CA7671A6AD8E500ADEF0F /* Sources */,
-				878CA7681A6AD8E500ADEF0F /* Frameworks */,
-				878CA7691A6AD8E500ADEF0F /* Resources */,
+				878CA7981A6ADD9100ADEF0F /* Sources */,
+				878CA7991A6ADD9100ADEF0F /* Frameworks */,
+				878CA79A1A6ADD9100ADEF0F /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				878CA76D1A6AD8E500ADEF0F /* PBXTargetDependency */,
+				878CA79E1A6ADD9100ADEF0F /* PBXTargetDependency */,
 			);
 			name = "T-SwizzleTests";
 			productName = "T-SwizzleTests";
-			productReference = 878CA76B1A6AD8E500ADEF0F /* T-SwizzleTests.xctest */;
+			productReference = 878CA79C1A6ADD9100ADEF0F /* T-SwizzleTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		878CA74A1A6AD8E500ADEF0F /* Project object */ = {
+		878CA77C1A6ADD9100ADEF0F /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 0610;
 				ORGANIZATIONNAME = tswizzle;
 				TargetAttributes = {
-					878CA7511A6AD8E500ADEF0F = {
+					878CA7831A6ADD9100ADEF0F = {
 						CreatedOnToolsVersion = 6.1.1;
 					};
-					878CA76A1A6AD8E500ADEF0F = {
+					878CA79B1A6ADD9100ADEF0F = {
 						CreatedOnToolsVersion = 6.1.1;
-						TestTargetID = 878CA7511A6AD8E500ADEF0F;
+						TestTargetID = 878CA7831A6ADD9100ADEF0F;
 					};
 				};
 			};
-			buildConfigurationList = 878CA74D1A6AD8E500ADEF0F /* Build configuration list for PBXProject "T-Swizzle" */;
+			buildConfigurationList = 878CA77F1A6ADD9100ADEF0F /* Build configuration list for PBXProject "T-Swizzle" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -182,29 +179,29 @@
 				en,
 				Base,
 			);
-			mainGroup = 878CA7491A6AD8E500ADEF0F;
-			productRefGroup = 878CA7531A6AD8E500ADEF0F /* Products */;
+			mainGroup = 878CA77B1A6ADD9100ADEF0F;
+			productRefGroup = 878CA7851A6ADD9100ADEF0F /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				878CA7511A6AD8E500ADEF0F /* T-Swizzle */,
-				878CA76A1A6AD8E500ADEF0F /* T-SwizzleTests */,
+				878CA7831A6ADD9100ADEF0F /* T-Swizzle */,
+				878CA79B1A6ADD9100ADEF0F /* T-SwizzleTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		878CA7501A6AD8E500ADEF0F /* Resources */ = {
+		878CA7821A6ADD9100ADEF0F /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				878CA7611A6AD8E500ADEF0F /* Main.storyboard in Resources */,
-				878CA7661A6AD8E500ADEF0F /* LaunchScreen.xib in Resources */,
-				878CA7631A6AD8E500ADEF0F /* Images.xcassets in Resources */,
+				878CA7921A6ADD9100ADEF0F /* Main.storyboard in Resources */,
+				878CA7971A6ADD9100ADEF0F /* LaunchScreen.xib in Resources */,
+				878CA7941A6ADD9100ADEF0F /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		878CA7691A6AD8E500ADEF0F /* Resources */ = {
+		878CA79A1A6ADD9100ADEF0F /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -214,48 +211,47 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		878CA74E1A6AD8E500ADEF0F /* Sources */ = {
+		878CA7801A6ADD9100ADEF0F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				878CA75A1A6AD8E500ADEF0F /* RootViewController.swift in Sources */,
-				878CA75E1A6AD8E500ADEF0F /* ModelController.swift in Sources */,
-				878CA75C1A6AD8E500ADEF0F /* DataViewController.swift in Sources */,
-				878CA7581A6AD8E500ADEF0F /* AppDelegate.swift in Sources */,
+				878CA78F1A6ADD9100ADEF0F /* ViewController.swift in Sources */,
+				878CA78A1A6ADD9100ADEF0F /* AppDelegate.swift in Sources */,
+				878CA78D1A6ADD9100ADEF0F /* T_Swizzle.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		878CA7671A6AD8E500ADEF0F /* Sources */ = {
+		878CA7981A6ADD9100ADEF0F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				878CA7721A6AD8E500ADEF0F /* T_SwizzleTests.swift in Sources */,
+				878CA7A31A6ADD9100ADEF0F /* T_SwizzleTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		878CA76D1A6AD8E500ADEF0F /* PBXTargetDependency */ = {
+		878CA79E1A6ADD9100ADEF0F /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 878CA7511A6AD8E500ADEF0F /* T-Swizzle */;
-			targetProxy = 878CA76C1A6AD8E500ADEF0F /* PBXContainerItemProxy */;
+			target = 878CA7831A6ADD9100ADEF0F /* T-Swizzle */;
+			targetProxy = 878CA79D1A6ADD9100ADEF0F /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		878CA75F1A6AD8E500ADEF0F /* Main.storyboard */ = {
+		878CA7901A6ADD9100ADEF0F /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				878CA7601A6AD8E500ADEF0F /* Base */,
+				878CA7911A6ADD9100ADEF0F /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
-		878CA7641A6AD8E500ADEF0F /* LaunchScreen.xib */ = {
+		878CA7951A6ADD9100ADEF0F /* LaunchScreen.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
-				878CA7651A6AD8E500ADEF0F /* Base */,
+				878CA7961A6ADD9100ADEF0F /* Base */,
 			);
 			name = LaunchScreen.xib;
 			sourceTree = "<group>";
@@ -263,7 +259,7 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		878CA7731A6AD8E500ADEF0F /* Debug */ = {
+		878CA7A41A6ADD9100ADEF0F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -305,7 +301,7 @@
 			};
 			name = Debug;
 		};
-		878CA7741A6AD8E500ADEF0F /* Release */ = {
+		878CA7A51A6ADD9100ADEF0F /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -340,7 +336,7 @@
 			};
 			name = Release;
 		};
-		878CA7761A6AD8E500ADEF0F /* Debug */ = {
+		878CA7A71A6ADD9100ADEF0F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -350,7 +346,7 @@
 			};
 			name = Debug;
 		};
-		878CA7771A6AD8E500ADEF0F /* Release */ = {
+		878CA7A81A6ADD9100ADEF0F /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -360,7 +356,7 @@
 			};
 			name = Release;
 		};
-		878CA7791A6AD8E500ADEF0F /* Debug */ = {
+		878CA7AA1A6ADD9100ADEF0F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -379,7 +375,7 @@
 			};
 			name = Debug;
 		};
-		878CA77A1A6AD8E500ADEF0F /* Release */ = {
+		878CA7AB1A6ADD9100ADEF0F /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -397,32 +393,45 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		878CA74D1A6AD8E500ADEF0F /* Build configuration list for PBXProject "T-Swizzle" */ = {
+		878CA77F1A6ADD9100ADEF0F /* Build configuration list for PBXProject "T-Swizzle" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				878CA7731A6AD8E500ADEF0F /* Debug */,
-				878CA7741A6AD8E500ADEF0F /* Release */,
+				878CA7A41A6ADD9100ADEF0F /* Debug */,
+				878CA7A51A6ADD9100ADEF0F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		878CA7751A6AD8E500ADEF0F /* Build configuration list for PBXNativeTarget "T-Swizzle" */ = {
+		878CA7A61A6ADD9100ADEF0F /* Build configuration list for PBXNativeTarget "T-Swizzle" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				878CA7761A6AD8E500ADEF0F /* Debug */,
-				878CA7771A6AD8E500ADEF0F /* Release */,
+				878CA7A71A6ADD9100ADEF0F /* Debug */,
+				878CA7A81A6ADD9100ADEF0F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
-		878CA7781A6AD8E500ADEF0F /* Build configuration list for PBXNativeTarget "T-SwizzleTests" */ = {
+		878CA7A91A6ADD9100ADEF0F /* Build configuration list for PBXNativeTarget "T-SwizzleTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				878CA7791A6AD8E500ADEF0F /* Debug */,
-				878CA77A1A6AD8E500ADEF0F /* Release */,
+				878CA7AA1A6ADD9100ADEF0F /* Debug */,
+				878CA7AB1A6ADD9100ADEF0F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		878CA78B1A6ADD9100ADEF0F /* T_Swizzle.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				878CA78C1A6ADD9100ADEF0F /* T_Swizzle.xcdatamodel */,
+			);
+			currentVersion = 878CA78C1A6ADD9100ADEF0F /* T_Swizzle.xcdatamodel */;
+			path = T_Swizzle.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
-	rootObject = 878CA74A1A6AD8E500ADEF0F /* Project object */;
+	rootObject = 878CA77C1A6ADD9100ADEF0F /* Project object */;
 }
