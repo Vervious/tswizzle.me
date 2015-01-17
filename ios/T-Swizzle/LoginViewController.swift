@@ -8,29 +8,46 @@
 
 import UIKit
 
-class ViewController: UIViewController {
-
+class ViewController: UIViewController, FBLoginViewDelegate {
+    
+    @IBOutlet var fbLoginView : FBLoginView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        self.logInWithFacebook()
+        self.fbLoginView.delegate = self;
+        self.fbLoginView.readPermissions = ["public_profile", "email", "user_friends"]
+
+    }
+    
+    //FACEBOOK DELEGATE METHODS
+    
+    //If the user is already logged in
+    
+    func loginViewShowingLoggedInUser(loginView : FBLoginView!) {
+        NSLog("User Logged In")
+        
+        self.performSegueWithIdentifier("toTheSwizzle", sender: self)
         
     }
     
-    func logInWithFacebook() {
-        
-//        PFFacebookUtils.logInWithPermissions(permissions, {
-//            (user: PFUser!, error: NSError!) -> Void in
-//            if user == nil {
-//                NSLog("Uh oh. The user cancelled the Facebook login.")
-//            } else if user.isNew {
-//                NSLog("User signed up and logged in through Facebook!")
-//            } else {
-//                NSLog("User logged in through Facebook!")
-//            }
-//        })
-
-}
+    func loginViewFetchedUserInfo(loginView : FBLoginView!, user: FBGraphUser){
+        NSLog("User Name: \(user.name)")
+    }
+    
+    //If the user is logged out
+    
+    func loginViewShowingLoggedOutUser(loginView : FBLoginView!) {
+        NSLog("User Logged Out")
+    }
+    
+    //Errors
+    
+    func loginView(loginView : FBLoginView!, handleError:NSError) {
+        NSLog("Error: \(handleError.localizedDescription)")
+    }
+    
+    
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()

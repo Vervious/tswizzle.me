@@ -21,7 +21,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         PFAnalytics.trackAppOpenedWithLaunchOptionsInBackground([NSObject : AnyObject]()) { (Bool, NSError) -> Void in
         }
         
-        PFFacebookUtils.initializeFacebook()
+        FBLoginView.self
+        FBProfilePictureView.self
+        
         
         return true
     }
@@ -44,14 +46,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         openURL url: NSURL,
         sourceApplication: String,
         annotation: AnyObject?) -> Bool {
-            return FBAppCall.handleOpenURL(url, sourceApplication:sourceApplication,
-                withSession:PFFacebookUtils.session())
+            
+            return FBAppCall.handleOpenURL(url, sourceApplication:sourceApplication)
     }
 
     func applicationDidBecomeActive(application: UIApplication) {
         // Restart any tasks that were paused (or not yet started) while the application was inactive. If the application was previously in the background, optionally refresh the user interface.
         
-        FBAppCall.handleDidBecomeActiveWithSession(PFFacebookUtils.session())
     }
 
     func applicationWillTerminate(application: UIApplication) {
