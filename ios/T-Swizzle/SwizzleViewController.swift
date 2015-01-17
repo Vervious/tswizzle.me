@@ -9,11 +9,12 @@
 import UIKit
 
 class SwizzleViewController: UIViewController {
+    
+    @IBOutlet weak var inputTextView: UITextView!
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        
     }
 
     override func didReceiveMemoryWarning() {

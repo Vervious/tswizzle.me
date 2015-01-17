@@ -26,6 +26,7 @@
 		877718D41A6B06CC001AF51A /* SwizzleView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 877718D21A6B06CC001AF51A /* SwizzleView.xib */; };
 		877718D61A6B108A001AF51A /* TSXibView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 877718D51A6B108A001AF51A /* TSXibView.swift */; };
 		877718D81A6B19A9001AF51A /* SwizzleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 877718D71A6B19A9001AF51A /* SwizzleView.swift */; };
+		877718DA1A6B245C001AF51A /* SwizzleTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 877718D91A6B245C001AF51A /* SwizzleTextView.swift */; };
 		878CA78A1A6ADD9100ADEF0F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 878CA7891A6ADD9100ADEF0F /* AppDelegate.swift */; };
 		878CA78D1A6ADD9100ADEF0F /* T_Swizzle.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 878CA78B1A6ADD9100ADEF0F /* T_Swizzle.xcdatamodeld */; };
 		878CA78F1A6ADD9100ADEF0F /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 878CA78E1A6ADD9100ADEF0F /* LoginViewController.swift */; };
@@ -66,6 +67,7 @@
 		877718D21A6B06CC001AF51A /* SwizzleView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SwizzleView.xib; sourceTree = "<group>"; };
 		877718D51A6B108A001AF51A /* TSXibView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TSXibView.swift; sourceTree = "<group>"; };
 		877718D71A6B19A9001AF51A /* SwizzleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwizzleView.swift; sourceTree = "<group>"; };
+		877718D91A6B245C001AF51A /* SwizzleTextView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwizzleTextView.swift; sourceTree = "<group>"; };
 		878CA7841A6ADD9100ADEF0F /* T-Swizzle.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "T-Swizzle.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		878CA7881A6ADD9100ADEF0F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		878CA7891A6ADD9100ADEF0F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -137,8 +139,9 @@
 		877718CE1A6B05E8001AF51A /* Swizzle */ = {
 			isa = PBXGroup;
 			children = (
-				877718D51A6B108A001AF51A /* TSXibView.swift */,
 				877718D11A6B06CC001AF51A /* SwizzleViewController.swift */,
+				877718D91A6B245C001AF51A /* SwizzleTextView.swift */,
+				877718D51A6B108A001AF51A /* TSXibView.swift */,
 				877718D71A6B19A9001AF51A /* SwizzleView.swift */,
 				877718D21A6B06CC001AF51A /* SwizzleView.xib */,
 			);
@@ -311,6 +314,7 @@
 				878CA78A1A6ADD9100ADEF0F /* AppDelegate.swift in Sources */,
 				877718D61A6B108A001AF51A /* TSXibView.swift in Sources */,
 				878CA78D1A6ADD9100ADEF0F /* T_Swizzle.xcdatamodeld in Sources */,
+				877718DA1A6B245C001AF51A /* SwizzleTextView.swift in Sources */,
 				877718D81A6B19A9001AF51A /* SwizzleView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
