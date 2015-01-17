@@ -5,7 +5,9 @@ def convert_time(timestring):
     nums = map(float, re.findall(r'\d+', timestring))
     return 3600*nums[0] + 60*nums[1] + nums[2] + nums[3]/1000
 
-with open("swift.srt") as f:
+songname = raw_input('songName: ')
+
+with open('videos/' + songname + '/' + songname + '.srt') as f:
     lines = f.readlines()
 
 lines = [line.strip().rstrip() for line in lines]

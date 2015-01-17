@@ -284,7 +284,3 @@ Shake it off, Shake it off
 72
 00:03:41,974 --> 00:03:44,081
 Shake it off, Shake it off
-
-73
-00:03:45,333 --> 00:03:53,666
-<font color="#0080ff"><b>Subtitle By .: Arman333 :.</b></font>
