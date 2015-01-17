@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "878CA7511A6AD8E500ADEF0F"
+               BlueprintIdentifier = "878CA7831A6ADD9100ADEF0F"
                BuildableName = "T-Swizzle.app"
                BlueprintName = "T-Swizzle"
                ReferencedContainer = "container:T-Swizzle.xcodeproj">
@@ -28,7 +28,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "878CA76A1A6AD8E500ADEF0F"
+               BlueprintIdentifier = "878CA79B1A6ADD9100ADEF0F"
                BuildableName = "T-SwizzleTests.xctest"
                BlueprintName = "T-SwizzleTests"
                ReferencedContainer = "container:T-Swizzle.xcodeproj">
@@ -46,7 +46,7 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "878CA76A1A6AD8E500ADEF0F"
+               BlueprintIdentifier = "878CA79B1A6ADD9100ADEF0F"
                BuildableName = "T-SwizzleTests.xctest"
                BlueprintName = "T-SwizzleTests"
                ReferencedContainer = "container:T-Swizzle.xcodeproj">
@@ -56,7 +56,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "878CA7511A6AD8E500ADEF0F"
+            BlueprintIdentifier = "878CA7831A6ADD9100ADEF0F"
             BuildableName = "T-Swizzle.app"
             BlueprintName = "T-Swizzle"
             ReferencedContainer = "container:T-Swizzle.xcodeproj">
@@ -75,7 +75,7 @@
       <BuildableProductRunnable>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "878CA7511A6AD8E500ADEF0F"
+            BlueprintIdentifier = "878CA7831A6ADD9100ADEF0F"
             BuildableName = "T-Swizzle.app"
             BlueprintName = "T-Swizzle"
             ReferencedContainer = "container:T-Swizzle.xcodeproj">
@@ -93,7 +93,7 @@
       <BuildableProductRunnable>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "878CA7511A6AD8E500ADEF0F"
+            BlueprintIdentifier = "878CA7831A6ADD9100ADEF0F"
             BuildableName = "T-Swizzle.app"
             BlueprintName = "T-Swizzle"
             ReferencedContainer = "container:T-Swizzle.xcodeproj">
