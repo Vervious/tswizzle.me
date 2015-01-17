@@ -22,6 +22,10 @@
 		27ED56E31A6AF6270016AB24 /* ParseFacebookUtils.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27ED56E21A6AF6270016AB24 /* ParseFacebookUtils.framework */; };
 		877718CB1A6AFC3D001AF51A /* FacebookSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 877718CA1A6AFC3D001AF51A /* FacebookSDK.framework */; };
 		877718CD1A6B017F001AF51A /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 877718CC1A6B017F001AF51A /* Parse.framework */; };
+		877718D31A6B06CC001AF51A /* SwizzleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 877718D11A6B06CC001AF51A /* SwizzleViewController.swift */; };
+		877718D41A6B06CC001AF51A /* SwizzleView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 877718D21A6B06CC001AF51A /* SwizzleView.xib */; };
+		877718D61A6B108A001AF51A /* TSXibView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 877718D51A6B108A001AF51A /* TSXibView.swift */; };
+		877718D81A6B19A9001AF51A /* SwizzleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 877718D71A6B19A9001AF51A /* SwizzleView.swift */; };
 		878CA78A1A6ADD9100ADEF0F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 878CA7891A6ADD9100ADEF0F /* AppDelegate.swift */; };
 		878CA78D1A6ADD9100ADEF0F /* T_Swizzle.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 878CA78B1A6ADD9100ADEF0F /* T_Swizzle.xcdatamodeld */; };
 		878CA78F1A6ADD9100ADEF0F /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 878CA78E1A6ADD9100ADEF0F /* LoginViewController.swift */; };
@@ -58,6 +62,10 @@
 		27ED56E21A6AF6270016AB24 /* ParseFacebookUtils.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ParseFacebookUtils.framework; path = frameworks/ParseFacebookUtils.framework; sourceTree = "<group>"; };
 		877718CA1A6AFC3D001AF51A /* FacebookSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FacebookSDK.framework; path = frameworks/FacebookSDK.framework; sourceTree = "<group>"; };
 		877718CC1A6B017F001AF51A /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Parse.framework; path = frameworks/Parse.framework; sourceTree = "<group>"; };
+		877718D11A6B06CC001AF51A /* SwizzleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwizzleViewController.swift; sourceTree = "<group>"; };
+		877718D21A6B06CC001AF51A /* SwizzleView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SwizzleView.xib; sourceTree = "<group>"; };
+		877718D51A6B108A001AF51A /* TSXibView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TSXibView.swift; sourceTree = "<group>"; };
+		877718D71A6B19A9001AF51A /* SwizzleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwizzleView.swift; sourceTree = "<group>"; };
 		878CA7841A6ADD9100ADEF0F /* T-Swizzle.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "T-Swizzle.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		878CA7881A6ADD9100ADEF0F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		878CA7891A6ADD9100ADEF0F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -126,6 +134,17 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		877718CE1A6B05E8001AF51A /* Swizzle */ = {
+			isa = PBXGroup;
+			children = (
+				877718D51A6B108A001AF51A /* TSXibView.swift */,
+				877718D11A6B06CC001AF51A /* SwizzleViewController.swift */,
+				877718D71A6B19A9001AF51A /* SwizzleView.swift */,
+				877718D21A6B06CC001AF51A /* SwizzleView.xib */,
+			);
+			name = Swizzle;
+			sourceTree = "<group>";
+		};
 		878CA77B1A6ADD9100ADEF0F = {
 			isa = PBXGroup;
 			children = (
@@ -150,6 +169,7 @@
 			children = (
 				878CA7891A6ADD9100ADEF0F /* AppDelegate.swift */,
 				878CA78E1A6ADD9100ADEF0F /* LoginViewController.swift */,
+				877718CE1A6B05E8001AF51A /* Swizzle */,
 				878CA7901A6ADD9100ADEF0F /* Main.storyboard */,
 				878CA7931A6ADD9100ADEF0F /* Images.xcassets */,
 				878CA7951A6ADD9100ADEF0F /* LaunchScreen.xib */,
@@ -266,6 +286,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				878CA7921A6ADD9100ADEF0F /* Main.storyboard in Resources */,
+				877718D41A6B06CC001AF51A /* SwizzleView.xib in Resources */,
 				878CA7971A6ADD9100ADEF0F /* LaunchScreen.xib in Resources */,
 				878CA7941A6ADD9100ADEF0F /* Images.xcassets in Resources */,
 			);
@@ -286,8 +307,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				878CA78F1A6ADD9100ADEF0F /* LoginViewController.swift in Sources */,
+				877718D31A6B06CC001AF51A /* SwizzleViewController.swift in Sources */,
 				878CA78A1A6ADD9100ADEF0F /* AppDelegate.swift in Sources */,
+				877718D61A6B108A001AF51A /* TSXibView.swift in Sources */,
 				878CA78D1A6ADD9100ADEF0F /* T_Swizzle.xcdatamodeld in Sources */,
+				877718D81A6B19A9001AF51A /* SwizzleView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
