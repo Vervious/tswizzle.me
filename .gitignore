@@ -1,6 +1,7 @@
 # Created by https://www.gitignore.io
 
 swizzled.mp4
+venv
 
 ### Swift ###
 # Xcode
