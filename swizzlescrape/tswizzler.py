@@ -78,7 +78,10 @@ def fmtcols(mylist, cols):
     return '\n'.join(lines)
 
 def wordBank():
-    return str(len(db.keys())) + 'Words in the Tswizzletionary' + '\n' + str(fmtcols(sorted(list(db.keys())),10))
+    return str(fmtcols(sorted(list(db.keys())),10))
+
+def words():
+    return sorted(db.keys())
 
 def help():
     print wordBank()

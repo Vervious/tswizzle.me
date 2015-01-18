@@ -1,0 +1,152 @@
+<html>
+  <head>
+    <title>
+      TSWIZZLE.me
+    </title>
+    <link href='http://fonts.googleapis.com/css?family=Amatic+SC' rel='stylesheet' type='text/css'>
+    <script src="https://code.jquery.com/jquery-2.1.3.js"></script>
+    <script src="https://code.jquery.com/ui/jquery-ui-1-9-git.js"></script>
+
+    <script>
+    $(document).ready(function(){
+
+      var availableTags = $('.words').text().trim().split(/\s+/);
+
+function split( val ) {
+    return val.split( /,\s*/ );
+}
+function extractLast( term ) {
+    return split( term ).pop();
+}
+$( ".input" )
+    // don't navigate away from the field on tab when selecting an item
+    .bind( "keydown", function( event ) {
+        if ( event.keyCode === $.ui.keyCode.TAB &&
+            $( this ).data( "autocomplete" ).menu.active ) {
+            event.preventDefault();
+        }
+    })
+    .autocomplete({
+        minLength: 0,
+        source: function( request, response ) {
+            // delegate back to autocomplete, but extract the last term
+            response( $.ui.autocomplete.filter(
+                availableTags, extractLast( request.term ) ) );
+        },
+        focus: function() {
+            // prevent value inserted on focus
+            return false;
+        },
+        select: function( event, ui ) {
+            var terms = split( this.value );
+            // remove the current input
+            terms.pop();
+            // add the selected item
+            terms.push( ui.item.value );
+            // add placeholder to get the comma-and-space at the end
+            terms.push( "" );
+            this.value = terms.join( ", " );
+            return false;
+        },
+        open: function( event, ui ) {
+            var input = $( event.target ),
+                widget = input.autocomplete( "widget" ),
+                style = $.extend( input.css( [
+                    "font",
+                    "border-left",
+                    "padding-left"
+                ] ), {
+                    position: "absolute",
+                    visibility: "hidden",
+                    "padding-right": 0,
+                    "border-right": 0,
+                    "white-space": "pre"
+                } ),
+                div = $( "<div/>" ),
+                pos = {
+                    my: "left top",
+                    collision: "none"
+                },
+                offset = -7; // magic number to align the first letter
+                             // in the text field with the first letter
+                             // of suggestions
+                             // depends on how you style the autocomplete box
+
+            widget.css( "width", "" );
+
+            div
+                .text( input.val().replace( /\S*$/, "" ) )
+                .css( style )
+                .insertAfter( input );
+            offset = Math.min(
+                Math.max( offset + div.width(), 0 ),
+                input.width() - widget.width()
+            );
+            div.remove();
+
+            pos.at = "left+" + offset + " bottom";
+            input.autocomplete( "option", "position", pos );
+
+            widget.position( $.extend( { of: input }, pos ) );
+        }
+    });
+
+    })
+    </script>
+
+    <style>
+      html, body {
+      }
+      body {
+        padding: 24px;
+        font-family: 'helvetica';
+        background: #c0392b;
+        color: white;
+      }
+      h1 {
+        text-align: center;
+        font-family: 'Amatic SC';
+        font-size: 5em;
+      }
+      .input {
+        border: none;
+        width: 100%;
+        background: none;
+        color: white;
+        font-size: 3em;
+        font-weight: bold;
+        text-align: center;
+      }
+
+      .input:focus {
+        outline: 0;
+        border: none;
+      }
+
+      .words {
+        width: 50%;
+        margin: 0 auto;
+      }
+
+    </style>
+
+    <script>
+    </script>
+  </head>
+  <body>
+    <h1>
+      TSWIZZLE.me
+    </h1>
+    <form action='swizzle'>
+    <div class='ui-widget'>
+      <input class='input' autocomplete='off' type='text' name='txt' value='blankspace'>
+      </input>
+    </div>
+    </form>
+    <br>
+    <br>
+    <div class='words'>
+    {% for word in words %} {{ word }} {% endfor %}
+    </div>
+  </body>
+</html>
