@@ -1,4 +1,5 @@
 import random
+import sys
 
 from moviepy.editor import VideoFileClip, concatenate, CompositeVideoClip, TextClip
 from data import shake, oursong, blank, trouble
@@ -36,7 +37,7 @@ def get_cuts(words):
     cuts = []
     for word in words:
         if word in db:
-            cuts.append(sorted(db[word], cmp=compare_cut_len)[0])
+            cuts.append((word, (sorted(db[word], cmp=compare_cut_len)[0])))
             # cuts.append(random.choice(db[word]))
     return cuts;
 
@@ -49,7 +50,6 @@ def assemble_cuts(cuts, filename, hasText=False):
                      .set_position('center')
                      .set_duration(end - start) )
             cut = CompositeVideoClip([cut, txt_clip]) # Overlay text on video
-            print word
         finalcuts.append(cut)
 
     final = concatenate(finalcuts)
