@@ -53,16 +53,18 @@ class SwizzleViewController: UIViewController, UITextViewDelegate, FBRequestConn
         
         if (FBSession.activeSession().isOpen){
             
-        
-        var videoData = NSData.initialize()
-        var params = ["videoData": "videoData", "contentType": "video/quicktime", "title": "Title", "description": "This video was made by Tswizzle.me"]
             
         
-            FBRequestConnection.startWithGraphPath("me/videos", parameters: params, HTTPMethod: "POST") { (FBRequestConnection connection, AnyObject object, NSError error) -> Void in
+            
+            var videoData = NSData.initialize()
+            var params = ["videoData": "videoData", "contentType": "video/quicktime", "title": "Title", "description": "This video was made by Tswizzle.me"]
                 
-                NSLog("Uploaded video to Facebook!")
-                
-            }
+            
+                FBRequestConnection.startWithGraphPath("me/videos", parameters: params, HTTPMethod: "POST") { (FBRequestConnection connection, AnyObject object, NSError error) -> Void in
+                    
+                    NSLog("Uploaded video to Facebook!")
+                    
+                }
             
 
         }   
