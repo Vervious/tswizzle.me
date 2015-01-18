@@ -10,7 +10,7 @@ times_texts = parse('videos/ShakeItOff/ShakeItOff.srt')
 def make_video(word, start, end):
     video.subclip(start, end).to_videofile('words/' + word + '.mp4')
 
-make_video('my', 8.829, 9.072)
+make_video('dates', 18.025, 18.777)
 
 # def unique_words():
 #     s = set()
