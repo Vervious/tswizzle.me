@@ -1,6 +1,6 @@
 import tswizzler as t
 
-swizzlytext = '''i fear shame without the time to trouble drowning,
+swizzlytext = '''drowning Drowning DROWNIN!G
 '''
 # test swizzles
 t.swizzle(swizzlytext, hasText=True)

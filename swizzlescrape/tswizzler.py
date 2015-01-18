@@ -1,5 +1,6 @@
 import random
 import sys
+import re
 
 from moviepy.editor import VideoFileClip, concatenate, CompositeVideoClip, TextClip
 from data import shake, oursong, blank, trouble, lovestory, youbelongwithme, neverbacktogether
@@ -15,11 +16,13 @@ videos = {
 }
 
 db = {}
+regex = re.compile('[^a-z]')
 
 def build_db(name, words):
     for item in words:
         w, start, end = list(item)
         word = w.lower()
+        word = regex.sub('', word)
         if word in db:
             db[word].append([name, start, end])
         else:
@@ -42,6 +45,8 @@ def compare_cut_len(x, y):
 def get_cuts(words):
     cuts = []
     for word in words:
+        word = word.lower()
+        word = regex.sub('', word)
         if word in db:
             cuts.append((word, (sorted(db[word], cmp=compare_cut_len)[0])))
             # cuts.append(random.choice(db[word]))
