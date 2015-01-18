@@ -2,14 +2,15 @@ import random
 import sys
 
 from moviepy.editor import VideoFileClip, concatenate, CompositeVideoClip, TextClip
-from data import shake, oursong, blank, trouble, lovestory
+from data import shake, oursong, blank, trouble, lovestory, youbelongwithme
 
 videos = {
     'shake': VideoFileClip('videos/ShakeItOff.mp4'),
     'blank': VideoFileClip('videos/BlankSpace.mp4'),
     'oursong': VideoFileClip('videos/oursong.mp4'),
     'trouble': VideoFileClip('videos/IKnewYouWereTrouble.mp4'),
-    'lovestory': VideoFileClip('videos/lovestory.mp4')
+    'lovestory': VideoFileClip('videos/lovestory.mp4'),
+    'youbelongwithme': VideoFileClip('videos/youbelongwithme.mp4')
 }
 
 db = {}
