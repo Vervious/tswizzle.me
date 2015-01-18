@@ -77,9 +77,11 @@ def fmtcols(mylist, cols):
     lines = ("\t".join(mylist[i:i+cols]) for i in xrange(0,len(mylist),cols))
     return '\n'.join(lines)
 
+def wordBank():
+    return str(len(db.keys())) + 'Words in the Tswizzletionary' + '\n' + str(fmtcols(sorted(list(db.keys())),10))
+
 def help():
-    print len(db.keys()), 'Words in the Tswizzletionary'
-    print fmtcols(sorted(list(db.keys())),10)
+    print wordBank()
 
 def getLengths():
     words = [(tup[0], tup[1][0]) for tup in db.items()]

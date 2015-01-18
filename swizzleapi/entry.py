@@ -11,7 +11,8 @@ app = Flask(__name__, static_folder='../tempstore/', static_url_path='/static')
 # entry point into this very simple swizzleapi
 @app.route("/")
 def splash():
-    return "Welcome to the T-Swizzle API. Well shit."
+    bankOfWords = T.wordBank()
+    return "Welcome to the T-Swizzle API. Well shit. <br/> <form action='swizzle'><input style='display: block; width: 90%; height: 5em; font-size: 3em' type='text' name='txt' value='blank space'></input></form>" + "<br/><br/><br/><p>" + bankOfWords + "</p>"
 
 # call api/swizzle?txt=incredible%20things
 # gets us an actual video file...
