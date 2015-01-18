@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6254" systemVersion="14C78c" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6254" systemVersion="13F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
     </dependencies>
@@ -10,11 +10,11 @@
             <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="This is the better default text for a swizzleview" translatesAutoresizingMaskIntoConstraints="NO" id="0z9-0l-cSS" customClass="SwizzleTextView" customModule="T_Swizzle" customModuleProvider="target">
+                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Here's a blank space, baby ___________." translatesAutoresizingMaskIntoConstraints="NO" id="0z9-0l-cSS" customClass="SwizzleTextView" customModule="T_Swizzle" customModuleProvider="target">
                     <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences" returnKeyType="send"/>
                     <variation key="widthClass=compact" fixedFrame="YES">
                         <rect key="frame" x="0.0" y="0.0" width="400" height="600"/>
                     </variation>
@@ -22,6 +22,20 @@
                         <rect key="frame" x="0.0" y="0.0" width="400" height="800"/>
                     </variation>
                 </textView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="huJ-eJ-yrN">
+                    <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="60"/>
+                    <state key="normal" title=">>">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <variation key="widthClass=compact" fixedFrame="YES">
+                        <rect key="frame" x="249" y="450" width="72" height="61"/>
+                    </variation>
+                    <connections>
+                        <action selector="makeSwizzle:" destination="1Ve-zJ-dtQ" eventType="touchUpInside" id="qzv-fl-wdc"/>
+                    </connections>
+                </button>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <nil key="simulatedStatusBarMetrics"/>
@@ -29,11 +43,13 @@
             <variation key="default">
                 <mask key="subviews">
                     <exclude reference="0z9-0l-cSS"/>
+                    <exclude reference="huJ-eJ-yrN"/>
                 </mask>
             </variation>
             <variation key="widthClass=compact">
                 <mask key="subviews">
                     <include reference="0z9-0l-cSS"/>
+                    <include reference="huJ-eJ-yrN"/>
                 </mask>
             </variation>
             <point key="canvasLocation" x="363" y="-672"/>
@@ -41,6 +57,7 @@
         <viewController id="1Ve-zJ-dtQ" customClass="SwizzleViewController" customModule="T_Swizzle" customModuleProvider="target">
             <connections>
                 <outlet property="inputTextView" destination="0z9-0l-cSS" id="uAa-Fc-DPj"/>
+                <outlet property="sendButton" destination="huJ-eJ-yrN" id="x9E-pB-cG6"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="1bx-pM-UFu"/>
             </connections>
         </viewController>

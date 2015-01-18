@@ -2,13 +2,13 @@
 //  ViewController.swift
 //  T-Swizzle
 //
-//  Created by Benjamin Y Chan on 1/17/15.
+//  Created by Jennifer Zhang on 1/17/15.
 //  Copyright (c) 2015 tswizzle. All rights reserved.
 //
 
 import UIKit
 
-class ViewController: UIViewController, FBLoginViewDelegate {
+class LoginViewController: UIViewController, FBLoginViewDelegate {
     
     @IBOutlet var fbLoginView : FBLoginView!
     
@@ -16,8 +16,10 @@ class ViewController: UIViewController, FBLoginViewDelegate {
         super.viewDidLoad()
         
         self.fbLoginView.delegate = self;
-        self.fbLoginView.readPermissions = ["public_profile", "email", "user_friends"]
-
+        self.fbLoginView.readPermissions = ["public_profile", "email", "user_friends", "publish_stream"]
+        
+        self.view.backgroundColor = UIColor(red: 192.0, green: 57.0, blue: 43.0, alpha: 1.0)
+        
     }
     
     //FACEBOOK DELEGATE METHODS
@@ -48,12 +50,12 @@ class ViewController: UIViewController, FBLoginViewDelegate {
     }
     
     
-
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
-
+    
+    
 }
 

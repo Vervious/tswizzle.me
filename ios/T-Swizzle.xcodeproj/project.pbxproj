@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2742CED51A6BA13200246784 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2742CED41A6BA13200246784 /* LoginViewController.swift */; };
+		2742CED81A6BA77000246784 /* AmaticSC-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2742CED61A6BA77000246784 /* AmaticSC-Bold.ttf */; };
+		2742CED91A6BA77000246784 /* AmaticSC-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2742CED71A6BA77000246784 /* AmaticSC-Regular.ttf */; };
 		27ED56C51A6ADFCE0016AB24 /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27ED56C41A6ADFCE0016AB24 /* Bolts.framework */; };
 		27ED56D21A6AE0240016AB24 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27ED56C81A6AE0240016AB24 /* AudioToolbox.framework */; };
 		27ED56D31A6AE0240016AB24 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27ED56C91A6AE0240016AB24 /* CFNetwork.framework */; };
@@ -29,7 +32,6 @@
 		877718DA1A6B245C001AF51A /* SwizzleTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 877718D91A6B245C001AF51A /* SwizzleTextView.swift */; };
 		878CA78A1A6ADD9100ADEF0F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 878CA7891A6ADD9100ADEF0F /* AppDelegate.swift */; };
 		878CA78D1A6ADD9100ADEF0F /* T_Swizzle.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 878CA78B1A6ADD9100ADEF0F /* T_Swizzle.xcdatamodeld */; };
-		878CA78F1A6ADD9100ADEF0F /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 878CA78E1A6ADD9100ADEF0F /* LoginViewController.swift */; };
 		878CA7921A6ADD9100ADEF0F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 878CA7901A6ADD9100ADEF0F /* Main.storyboard */; };
 		878CA7941A6ADD9100ADEF0F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 878CA7931A6ADD9100ADEF0F /* Images.xcassets */; };
 		878CA7971A6ADD9100ADEF0F /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 878CA7951A6ADD9100ADEF0F /* LaunchScreen.xib */; };
@@ -47,6 +49,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2742CED41A6BA13200246784 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LoginViewController.swift; path = ../LoginViewController.swift; sourceTree = "<group>"; };
+		2742CED61A6BA77000246784 /* AmaticSC-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "AmaticSC-Bold.ttf"; sourceTree = "<group>"; };
+		2742CED71A6BA77000246784 /* AmaticSC-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "AmaticSC-Regular.ttf"; sourceTree = "<group>"; };
 		27ED56C01A6ADFAF0016AB24 /* T-Swizzle-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "T-Swizzle-Bridging-Header.h"; sourceTree = "<group>"; };
 		27ED56C41A6ADFCE0016AB24 /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Bolts.framework; path = frameworks/Bolts.framework; sourceTree = "<group>"; };
 		27ED56C81A6AE0240016AB24 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
@@ -72,7 +77,6 @@
 		878CA7881A6ADD9100ADEF0F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		878CA7891A6ADD9100ADEF0F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		878CA78C1A6ADD9100ADEF0F /* T_Swizzle.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = T_Swizzle.xcdatamodel; sourceTree = "<group>"; };
-		878CA78E1A6ADD9100ADEF0F /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		878CA7911A6ADD9100ADEF0F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		878CA7931A6ADD9100ADEF0F /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		878CA7961A6ADD9100ADEF0F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
@@ -170,12 +174,14 @@
 		878CA7861A6ADD9100ADEF0F /* T-Swizzle */ = {
 			isa = PBXGroup;
 			children = (
+				2742CED41A6BA13200246784 /* LoginViewController.swift */,
 				878CA7891A6ADD9100ADEF0F /* AppDelegate.swift */,
-				878CA78E1A6ADD9100ADEF0F /* LoginViewController.swift */,
 				877718CE1A6B05E8001AF51A /* Swizzle */,
 				878CA7901A6ADD9100ADEF0F /* Main.storyboard */,
 				878CA7931A6ADD9100ADEF0F /* Images.xcassets */,
 				878CA7951A6ADD9100ADEF0F /* LaunchScreen.xib */,
+				2742CED61A6BA77000246784 /* AmaticSC-Bold.ttf */,
+				2742CED71A6BA77000246784 /* AmaticSC-Regular.ttf */,
 				878CA78B1A6ADD9100ADEF0F /* T_Swizzle.xcdatamodeld */,
 				878CA7871A6ADD9100ADEF0F /* Supporting Files */,
 				27ED56C01A6ADFAF0016AB24 /* T-Swizzle-Bridging-Header.h */,
@@ -289,6 +295,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				878CA7921A6ADD9100ADEF0F /* Main.storyboard in Resources */,
+				2742CED81A6BA77000246784 /* AmaticSC-Bold.ttf in Resources */,
+				2742CED91A6BA77000246784 /* AmaticSC-Regular.ttf in Resources */,
 				877718D41A6B06CC001AF51A /* SwizzleView.xib in Resources */,
 				878CA7971A6ADD9100ADEF0F /* LaunchScreen.xib in Resources */,
 				878CA7941A6ADD9100ADEF0F /* Images.xcassets in Resources */,
@@ -309,10 +317,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				878CA78F1A6ADD9100ADEF0F /* LoginViewController.swift in Sources */,
 				877718D31A6B06CC001AF51A /* SwizzleViewController.swift in Sources */,
 				878CA78A1A6ADD9100ADEF0F /* AppDelegate.swift in Sources */,
 				877718D61A6B108A001AF51A /* TSXibView.swift in Sources */,
+				2742CED51A6BA13200246784 /* LoginViewController.swift in Sources */,
 				878CA78D1A6ADD9100ADEF0F /* T_Swizzle.xcdatamodeld in Sources */,
 				877718DA1A6B245C001AF51A /* SwizzleTextView.swift in Sources */,
 				877718D81A6B19A9001AF51A /* SwizzleView.swift in Sources */,
