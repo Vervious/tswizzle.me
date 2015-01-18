@@ -1,24 +1,27 @@
 //
-//  ViewController.m
+//  SwizzleViewController.m
 //  TSwizzle.me
 //
 //  Created by Jennifer Zhang on 1/18/15.
 //  Copyright (c) 2015 TSwizzle.me. All rights reserved.
 //
 
-#import "ViewController.h"
+#import "SwizzleViewController.h"
 
-@interface ViewController ()
+@interface SwizzleViewController ()
+
+@property (weak, nonatomic) IBOutlet UIButton *swizzleMeButton;
+@property (weak, nonatomic) IBOutlet UITextView *blankSpaceTextView;
 
 @end
 
-@implementation ViewController
+@implementation SwizzleViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
     
-
+    
 }
 
 - (void)didReceiveMemoryWarning {

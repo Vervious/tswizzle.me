@@ -16,6 +16,7 @@
 		2742CF031A6C139900246784 /* TSwizzle_meTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2742CF021A6C139900246784 /* TSwizzle_meTests.m */; };
 		2742CF101A6C16BA00246784 /* AmaticSC-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2742CF0C1A6C13F100246784 /* AmaticSC-Bold.ttf */; };
 		2742CF111A6C16BA00246784 /* AmaticSC-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2742CF0D1A6C13F700246784 /* AmaticSC-Regular.ttf */; };
+		2742CF191A6C1AA100246784 /* SwizzleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2742CF181A6C1AA100246784 /* SwizzleViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +45,8 @@
 		2742CF021A6C139900246784 /* TSwizzle_meTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TSwizzle_meTests.m; sourceTree = "<group>"; };
 		2742CF0C1A6C13F100246784 /* AmaticSC-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "AmaticSC-Bold.ttf"; sourceTree = "<group>"; };
 		2742CF0D1A6C13F700246784 /* AmaticSC-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "AmaticSC-Regular.ttf"; sourceTree = "<group>"; };
+		2742CF181A6C1AA100246784 /* SwizzleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SwizzleViewController.m; sourceTree = "<group>"; };
+		2742CF1A1A6C1AB500246784 /* SwizzleViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SwizzleViewController.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,6 +93,8 @@
 				2742CEEB1A6C139900246784 /* AppDelegate.m */,
 				2742CEED1A6C139900246784 /* ViewController.h */,
 				2742CEEE1A6C139900246784 /* ViewController.m */,
+				2742CF181A6C1AA100246784 /* SwizzleViewController.m */,
+				2742CF1A1A6C1AB500246784 /* SwizzleViewController.h */,
 				2742CEF01A6C139900246784 /* Main.storyboard */,
 				2742CEF31A6C139900246784 /* Images.xcassets */,
 				2742CEF51A6C139900246784 /* LaunchScreen.xib */,
@@ -244,6 +249,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2742CEEF1A6C139900246784 /* ViewController.m in Sources */,
+				2742CF191A6C1AA100246784 /* SwizzleViewController.m in Sources */,
 				2742CEEC1A6C139900246784 /* AppDelegate.m in Sources */,
 				2742CEE91A6C139900246784 /* main.m in Sources */,
 			);

@@ -66,10 +66,10 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
         </scene>
-        <!--View Controller-->
+        <!--Swizzle View Controller-->
         <scene sceneID="I1h-Ul-fX8">
             <objects>
-                <viewController id="aAG-i3-ve0" sceneMemberID="viewController">
+                <viewController id="aAG-i3-ve0" customClass="SwizzleViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Sp8-SD-fG1"/>
                         <viewControllerLayoutGuide type="bottom" id="pQX-X5-8Ge"/>
@@ -112,6 +112,10 @@
                             </mask>
                         </variation>
                     </view>
+                    <connections>
+                        <outlet property="blankSpaceTextView" destination="yED-ON-tab" id="40p-6h-XaZ"/>
+                        <outlet property="swizzleMeButton" destination="eK3-Qw-faN" id="hKt-XE-9o0"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tfN-v2-d9R" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
