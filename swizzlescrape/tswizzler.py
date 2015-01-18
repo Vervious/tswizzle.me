@@ -1,18 +1,20 @@
 import random
 import sys
 import re
+import os
+dir = os.path.dirname(__file__)
 
 from moviepy.editor import VideoFileClip, concatenate, CompositeVideoClip, TextClip
 from data import shake, oursong, blank, trouble, lovestory, youbelongwithme, neverbacktogether
 
 videos = {
-    'shake': VideoFileClip('videos/ShakeItOff.mp4'),
-    'blank': VideoFileClip('videos/BlankSpace.mp4'),
-    'oursong': VideoFileClip('videos/oursong.mp4'),
-    'trouble': VideoFileClip('videos/IKnewYouWereTrouble.mp4'),
-    'lovestory': VideoFileClip('videos/lovestory.mp4'),
-    'youbelongwithme': VideoFileClip('videos/youbelongwithme.mp4'),
-    'neverbacktogether': VideoFileClip('videos/neverbacktogether.mp4')
+    'shake': VideoFileClip(os.path.join(dir, 'videos/ShakeItOff.mp4')),
+    'blank': VideoFileClip(os.path.join(dir, 'videos/BlankSpace.mp4')),
+    'oursong': VideoFileClip(os.path.join(dir, 'videos/oursong.mp4')),
+    'trouble': VideoFileClip(os.path.join(dir, 'videos/IKnewYouWereTrouble.mp4')),
+    'lovestory': VideoFileClip(os.path.join(dir, 'videos/lovestory.mp4')),
+    'youbelongwithme': VideoFileClip(os.path.join(dir, 'videos/youbelongwithme.mp4')),
+    'neverbacktogether': VideoFileClip(os.path.join(dir, 'videos/neverbacktogether.mp4'))
 }
 
 db = {}
@@ -64,7 +66,7 @@ def assemble_cuts(cuts, filename, hasText=False):
         finalcuts.append(cut)
 
     final = concatenate(finalcuts)
-    final.to_videofile(filename)
+    final.to_videofile(os.path.join(dir, filename))
 
 def swizzle(sentence, output="swizzled.mp4", hasText=False):
     words = sentence.split()
