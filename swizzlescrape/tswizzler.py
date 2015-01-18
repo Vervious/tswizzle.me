@@ -46,7 +46,7 @@ def assemble_cuts(cuts, filename, hasText=False):
     for (word, (video, start, end)) in cuts:
         cut = videos[video].subclip(start, end)
         if hasText:
-            txt_clip = (TextClip(word, font="helvetica", fontsize=70, color='white')
+            txt_clip = (TextClip(word, font="helvetica", fontsize=100, color='white')
                      .set_position('center')
                      .set_duration(end - start) )
             cut = CompositeVideoClip([cut, txt_clip]) # Overlay text on video
