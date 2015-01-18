@@ -1,24 +1,26 @@
 import random
 
 from moviepy.editor import VideoFileClip, concatenate
-from data import shake
+from data import shake, oursong
 
 videos = {
     'shake': VideoFileClip('videos/ShakeItOff.mp4'),
-    'blank': VideoFileClip('videos/BlankSpace.mp4')
+    'blank': VideoFileClip('videos/BlankSpace.mp4'),
+    'oursong': VideoFileClip('videos/oursong.mp4')
 }
 
 db = {}
 
 def build_db(name, words):
     for item in words:
-        word, start, end = item
+        word, start, end = list(item)
         if word in db:
             db[word].append([name, start, end])
         else:
             db[word] = [[name, start, end]]
 
 build_db('shake', shake.words)
+build_db('oursong', oursong.words)
 
 def make_video(word, start, end):
     video.subclip(start, end).to_videofile('words/' + word + '.mp4')
@@ -44,6 +46,7 @@ def fmtcols(mylist, cols):
     lines = ("\t".join(mylist[i:i+cols]) for i in xrange(0,len(mylist),cols))
     return '\n'.join(lines)
 
+print len(db.keys()), 'Words in the Tswizzletionary'
 print fmtcols(sorted(list(db.keys())),8)
 
 # make_video('dates', 18.025, 18.777)
