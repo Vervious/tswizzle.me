@@ -81,4 +81,17 @@ def help():
     print len(db.keys()), 'Words in the Tswizzletionary'
     print fmtcols(sorted(list(db.keys())),10)
 
-help()
+def getLengths():
+    words = [(tup[0], tup[1][0]) for tup in db.items()]
+    word_lengths = [(tup[0], (tup[1][2]  - tup[1][1]) * 10000) for tup in words]
+    int_diffs = []
+    for tup in word_lengths:
+        try:
+            int_diffs.append((tup[0], int(tup[1])))
+        except:
+            pass
+    lengths = sorted(int_diffs, key = lambda x: -x[1])
+    print [tup[0] for tup in lengths]
+
+
+getLengths()
