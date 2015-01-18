@@ -1,7 +1,7 @@
 import random
 
 from moviepy.editor import VideoFileClip, concatenate
-from data import shake, oursong
+from data import shake, oursong, blank
 
 videos = {
     'shake': VideoFileClip('videos/ShakeItOff.mp4'),
@@ -13,7 +13,8 @@ db = {}
 
 def build_db(name, words):
     for item in words:
-        word, start, end = list(item)
+        w, start, end = list(item)
+        word = w.lower()
         if word in db:
             db[word].append([name, start, end])
         else:
@@ -21,15 +22,21 @@ def build_db(name, words):
 
 build_db('shake', shake.words)
 build_db('oursong', oursong.words)
+build_db('blank', blank.words)
 
 def make_video(word, start, end):
     video.subclip(start, end).to_videofile('words/' + word + '.mp4')
+
+def compare_cut_len(x, y):
+    return int((y[2] - y[1]) - (x[2] - x[1]) * 1000)
 
 def get_cuts(words):
     cuts = []
     for word in words:
         if word in db:
-            cuts.append(random.choice(db[word]))
+            print word
+            cuts.append(sorted(db[word], cmp=compare_cut_len)[0])
+            # cuts.append(random.choice(db[word]))
     return cuts;
 
 def assemble_cuts(cuts, filename):
@@ -46,21 +53,8 @@ def fmtcols(mylist, cols):
     lines = ("\t".join(mylist[i:i+cols]) for i in xrange(0,len(mylist),cols))
     return '\n'.join(lines)
 
-print len(db.keys()), 'Words in the Tswizzletionary'
-print fmtcols(sorted(list(db.keys())),8)
+def help():
+    print len(db.keys()), 'Words in the Tswizzletionary'
+    print fmtcols(sorted(list(db.keys())),10)
 
-# make_video('dates', 18.025, 18.777)
-
-# def unique_words():
-#     s = set()
-#     for item in times_texts:
-#         words = item[1].split()
-#         for w in words:
-#             s.add(w.lower())
-#     return s
-
-# with open('shake-unique.txt', 'w') as f:
-#     for item in times_texts:
-#         f.write(str(item) + '\n')
-#     for word in sorted(list(unique_words())):
-#         f.write(word + '\n')
+help()
