@@ -40,7 +40,11 @@ def swizzle(sentence, output="swizzled.mp4"):
     cuts = get_cuts(words)
     assemble_cuts(cuts, output)
 
-swizzle("hey baby")
+def fmtcols(mylist, cols):
+    lines = ("\t".join(mylist[i:i+cols]) for i in xrange(0,len(mylist),cols))
+    return '\n'.join(lines)
+
+print fmtcols(sorted(list(db.keys())),8)
 
 # make_video('dates', 18.025, 18.777)
 
