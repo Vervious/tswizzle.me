@@ -23,9 +23,9 @@ def build_db(name, words):
         else:
             db[word] = [[name, start, end]]
 
-build_db('shake', shake.words)
-build_db('oursong', oursong.words)
-build_db('blank', blank.words)
+#build_db('shake', shake.words)
+#build_db('oursong', oursong.words)
+#build_db('blank', blank.words)
 build_db('trouble', trouble.words)
 build_db('lovestory', lovestory.words)
 
