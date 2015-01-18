@@ -66,7 +66,7 @@ def assemble_cuts(cuts, filename, hasText=False):
         finalcuts.append(cut)
 
     final = concatenate(finalcuts)
-    final.to_videofile(os.path.join(dir, filename))
+    final.write_videofile(os.path.join(dir, filename), codec='libx264', fps=120, audio_fps=44100, preset='superfast')
 
 def swizzle(sentence, output="swizzled.mp4", hasText=False):
     words = sentence.split()
