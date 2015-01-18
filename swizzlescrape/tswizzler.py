@@ -1,7 +1,4 @@
-import re
-from swizzle import parse
-
-
+PATH_TO_SHAKE = 'videos/ShakeItOff.mp4'
 
 from moviepy.editor import VideoFileClip, concatenate
 
