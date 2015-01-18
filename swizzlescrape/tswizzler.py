@@ -4,7 +4,7 @@ import re
 import os
 dir = os.path.dirname(__file__)
 
-from moviepy.editor import VideoFileClip, concatenate, CompositeVideoClip, TextClip
+from moviepy.editor import VideoFileClip, concatenate_videoclips, CompositeVideoClip, TextClip
 from data import shake, oursong, blank, trouble, lovestory, youbelongwithme, neverbacktogether
 
 videos = {
@@ -55,18 +55,27 @@ def get_cuts(words):
     return cuts;
 
 def assemble_cuts(cuts, filename, hasText=False):
-    finalcuts = []
-    for (word, (video, start, end)) in cuts:
-        cut = videos[video].subclip(start, end)
-        if hasText:
-            txt_clip = (TextClip(word, font="helvetica", fontsize=100, color='white')
-                     .set_position('center')
-                     .set_duration(end - start) )
-            cut = CompositeVideoClip([cut, txt_clip]) # Overlay text on video
-        finalcuts.append(cut)
+    # finalcuts = []
+    # final = None
+    # for (word, (video, start, end)) in cuts:
+    #     cut = videos[video].subclip(start, end)
+    #     if hasText:
+    #         txt_clip = (TextClip(word, font="helvetica", fontsize=100, color='white')
+    #                   .set_position('center')
+    #                   .set_duration(end - start) )
+    #         cut = CompositeVideoClip([cut, txt_clip]) # Overlay text on video
+    #     finalcuts.append(cut)
+    #     if end - start < 0.3:
+    #         final = concatenate_videoclips(finalcuts)
+    #         finalcuts = [final]
 
-    final = concatenate(finalcuts)
-    final.write_videofile(os.path.join(dir, filename), codec='libx264', fps=30, audio_fps=44100, preset='superfast')
+    # final = concatenate_videoclips(finalcuts)
+    # # final.write_videofile(os.path.join(dir, filename))
+    #     final = concatenate_videoclips([CompositeVideoClip([videos[video].subclip(start, end), TextClip(word, font="helvetica", fontsize=100, color='white')]) for (word,(video, start, end)) in cuts])
+
+    final = concatenate_videoclips([videos[video].subclip(start, end)
+                         for (word, (video, start, end)) in cuts])
+    final.to_videofile(filename)
 
 def swizzle(sentence, output="swizzled.mp4", hasText=False):
     words = sentence.split()
